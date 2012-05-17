@@ -1,5 +1,5 @@
 exports.testAction = testAction;
 
 var testAction: function(reqJson, callback) {
-	callback(null, 'test');
+	callback(null, {ret: 'test'});
 }

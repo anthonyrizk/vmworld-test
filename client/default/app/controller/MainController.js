@@ -14,9 +14,10 @@ Ext.define('VMworldTest.controller.MainController', {
 	doTestAct: function() {
 		$fh.act({'act': 'testAction'}, 
 		function(res) {
-			this.getOutputField().text = res;
+			this.getOutputField().setValue(res);
 		},
 		function(msg, err) {
+			this.getOutputField().setValue('error: ' + err);
 		});
 	}
 	

@@ -15,7 +15,7 @@ Ext.define('VMworldTest.controller.MainController', {
 		this.getOutputField().setValue('loading');
 		$fh.act({'act': 'testAction'}, 
 		function(res) {
-			this.getOutputField().setValue(JSON.stringify(result));
+			this.getOutputField().setValue(JSON.stringify(res));
 		},
 		function(msg, err) {
 			this.getOutputField().setValue('error: ' + msg);

@@ -13,11 +13,20 @@ Ext.define("VMworldTest.view.Main", {
                 styleHtmlContent: true,
                 scrollable: true,
 
-                items: {
+                items: [{
                     docked: 'top',
                     xtype: 'titlebar',
                     title: 'Welcome to Sencha Touch 2'
                 },
+                {
+                	xtype: 'button',
+                	id: 'testbutton',
+                	text: 'Test Act',
+                },
+                {
+                	xtype: 'textfield',
+                	id: 'output'
+                }],
                 
                 html: [
                     "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
